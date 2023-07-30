@@ -1,0 +1,34 @@
+.productos{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+    font-family: var(--letra);
+}
+
+.producto{
+    width:100px ;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.producto__img{
+    width: 100%;
+    height: 70%;
+}
+.producto__titulo,.producto__precio{
+    font-size: .9rem;
+    font-weight: 700;
+}
+.producto__detalle{
+    color:var(--color-blue);
+    font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+    .productos{
+        padding: 30px;
+    }
+    
+}

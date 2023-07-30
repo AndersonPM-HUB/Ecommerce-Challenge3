@@ -1,0 +1,39 @@
+.formulario{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    
+}
+.form__titulo{
+    margin-left: 1rem;
+    font-weight: 1000;
+}
+.form_inputs{
+    padding: 1rem;
+    margin: 10px;
+    border:none;
+}
+.form__boton{
+    background-color: var(--color-blue);
+    width: 7rem;
+    margin-left: 1rem;
+    color:white;
+    padding: 1rem 0 1rem ; 
+  
+}
+
+.form__boton:hover{
+    color:var(--color-blue);
+    background-color: white;
+    border: solid var(--color-blue);
+}
+@media  screen and (min-width: 768px) {
+    .form_inputs{
+        width:50vh;
+       
+    }
+    .formulario{
+        margin-left: 5rem;
+    }
+   
+}

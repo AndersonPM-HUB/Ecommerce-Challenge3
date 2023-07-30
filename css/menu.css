@@ -1,0 +1,53 @@
+.cabecera{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.login__buton{
+    width: 100px;
+    height: 50px;
+    border:solid var(--color-blue);
+    color: var(--color-blue);
+    background-color: #ffff;
+}
+.login__buton:hover{
+    background-color: var(--azul);
+    cursor: pointer;
+}
+
+.cabecera__busqueda{
+    display: none;
+}
+/* table */
+
+@media screen  and (min-width: 768px){
+    
+    .barra_search{
+        background-color: #F5F5F5;
+        width: 20rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3rem;
+        border-radius: 50px;
+
+    }
+    .cabecera__busqueda{
+        width: 2rem;
+        display: block;
+        width: 80%;
+        background-color: #F5F5F5;
+        border: none;
+        
+        
+    }
+    .login__buton{
+        order:1;
+        width: 150px;
+    }
+    .cabecera{
+        justify-content: space-around;
+    }
+}
