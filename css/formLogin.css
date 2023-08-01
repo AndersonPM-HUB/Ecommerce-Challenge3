@@ -1,0 +1,39 @@
+.form-login{
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    align-items: center;
+    padding: 50px;
+    
+}
+
+.form__form{
+    display: flex;
+    flex-direction: column;
+}
+
+.input__form{
+    width: 60vh;
+    height: 30px;
+    margin: 10px;
+
+}
+
+.btn__form{
+    width: 60vh;
+    height: 40px;
+    margin: 10px;
+    background-color: var(--color-blue);
+    color: white;
+    border: none;
+}
+
+.login__buton{
+    display: none;
+}
+
+.form__title{
+    font-size: var(--letra);
+    font-weight: 900;
+    font-size: 20px;
+}
