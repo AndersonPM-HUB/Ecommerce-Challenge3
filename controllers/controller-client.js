@@ -10,7 +10,7 @@ const tarjetas = (id,producto, precio, photo)=>{
     <div class="producto__descripcion">
         <h4 class="producto__titulo">${producto}</h4>
         <p class="producto__precio">${precio}</p>
-        <a href="http://127.0.0.1:5500/pages/productos.html?id=${id}" class="producto__detalle">ver detalle</a>
+        <a href="../pages/productos.html?id=${id}" class="producto__detalle">ver detalle</a>
     </div>`;
 
     cont.innerHTML = tarjeta;

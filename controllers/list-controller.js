@@ -10,7 +10,7 @@ const registro = (id, producto, precio, descripcion) => {
                     <td>
                     <ul class="table__button-control">
                         <li>
-                        <a href="http://127.0.0.1:5500/pages/admin.html?id=${id}"><button class="simple-button--edit" id="${id}">Editar</button></a>
+                        <a href="../pages/admin.html?id=${id}"><button class="simple-button--edit" id="${id}">Editar</button></a>
                         </li>
                         <li>
                         <button class="simple-button--delete" id="${id}">Borrar</button>

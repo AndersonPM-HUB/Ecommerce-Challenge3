@@ -25,7 +25,7 @@ const detalle =async()=> {
     dp.textContent = info.descripcion;
 
   } catch (error) {
-    
+    console.log('algo saalio mal', error)
   }
  
 
