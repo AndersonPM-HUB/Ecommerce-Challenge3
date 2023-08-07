@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-
+    <title>Document</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/menu.css">
@@ -14,9 +13,12 @@
     <link rel="stylesheet" href="../css/formulario.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/formLogin.css">
+    <link rel="stylesheet" href="../css/create.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
     <script  src="../js/menu.js"></script>
     <script src="../js/contacto.js"></script>
     <script src="../js/footer.js"></script>
+    
 
     <script src="https://kit.fontawesome.com/75fe339b96.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,16 +29,34 @@
 <body>
     <header class="cabecera"></header>
 
-    <main class="form-login">
-        <h1 class="form__title">Inicio de sesion</h1>
-        <form class="form__form">
-            <input class="input__form" type="email" name="user" id="user" placeholder="Escriba su correo electrónico" required>
-            <input class="input__form"type="password" name="pass" id="pass" placeholder="Escriba su contraseña" required minlength="6" maxlength="8" title="caracteres especiales, Mayusculas , minusculas">
-            <button class="btn__form" type="submit">Entrar</button>
-        </form>
+    <main class="contenido">
+
+    
+        <table class="table">
+          <a class="link_admin" href="http://127.0.0.1:5500/pages/admin.html">Crear Producto</a>
+            <thead>
+              <tr>
+                <th class="table__column--p">PRODUCTO</th>
+                <th class="table__column--g">PRECIO</th>
+                <th class="table__column--g">DESCRIPCION</th>
+                <th class="table__column--m table__align--right">
+                  <a
+                    href="../pages/admin.html"
+                    class="simple-button simple-button--add"
+                    >NUEVO PRODUCTO</a>
+                </th>
+              </tr>
+            </thead>
+
+            <tbody data-table>
+            
+              
+            </tbody>
+          </table>
     </main>
     <section class="contacto"></section>
     <footer class="fotter"></footer>
-    <script  src="../js/script.js"></script>
+    <script type="module" src="../controllers/list-controller.js"></script>
+    <script src="../js/login.js"></script>
 </body>
 </html>

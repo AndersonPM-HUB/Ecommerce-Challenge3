@@ -14,9 +14,11 @@
     <link rel="stylesheet" href="../css/formulario.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/formLogin.css">
+    <link rel="stylesheet" href="../css/create.css">
     <script  src="../js/menu.js"></script>
     <script src="../js/contacto.js"></script>
     <script src="../js/footer.js"></script>
+    <script src="../js/login.js"></script>
 
     <script src="https://kit.fontawesome.com/75fe339b96.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,13 +27,19 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
-    <header class="cabecera"></header>
-
-    <main class="form-login">
-        <h1 class="form__title">Admin Panel</h1>
-        <form class="form__form" action="">
-            <input class="input__form" type="email" name="" id="" placeholder="Escriba su correo electrónico" required>
-            <input class="input__form"type="password" name="" id="" placeholder="Escriba su contraseña" required>
+    <header class="cabecera">
+      
+    </header>
+    
+    <main class="form-crud">
+        <a class="link__dash" href="../pages/dashboard.html">DashBoard</a>
+        <h1 class="form__title">Admin Panel- Agregar producto</h1>
+        
+        <form class="form__form" action="" data-form>
+            <input class="input__form"type="text" id="url"  placeholder="Ingrese la URL de la imagen" url-form>
+            <input class="input__form" type="text" id="producto"  placeholder="nombre producto" required maxlength="20" np-form>
+            <input class="input__form"type="number" id="precio"  placeholder="precio" required valor-form>
+            <textarea class="input__form" name="descripcion"  cols="30" rows="10" maxlength="150" d-form></textarea>
             <button class="btn__form" type="submit">Entrar</button>
         </form>
     </main>
@@ -39,5 +47,9 @@
 
     <section class="contacto"></section>
     <footer class="fotter"></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module"  src="../controllers/registro-controller.js"></script>
+    <script type="module" src="../controllers/actualizar-controller.js"></script>
+   
 </body>
 </html>
